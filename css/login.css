@@ -1,0 +1,110 @@
+body{
+    background:#95875860;
+    color:rgb(236, 222, 222);
+
+}
+
+
+.login-container{
+    position:relative;
+    background: #8a8163dc;
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+    width:30vw;
+    height:35vh;
+    display: flex;
+    align-items:center;
+    border-radius:3.5%;
+
+
+    
+}
+section{
+    position: relative;
+    background:#958758;
+    border-radius:2%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    /*the three lines above makes it possible for the secion to be at the center
+    since float is for only left and right*/
+
+}
+
+@media only screen and (max-width:550px){
+.login-container{
+        background:#a8975f0a;
+    }
+}
+@media only screen and (max-height:300px){
+    .login-container{
+        background:#a8975f0a;
+
+        }
+    }
+
+
+input{
+    margin:5px;
+}
+
+section form #button{
+    border-radius:4px;
+
+}
+section form #button:hover{
+    border-radius:4px;
+    background:#cccccc;
+}
+
+
+
+/*admin css*/
+.page-list{
+    background:#958758d0;
+    margin-top: 6em;
+    display:flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width:70vw;
+    
+    padding-bottom:30px;
+    border-radius:15px;
+}
+
+.page-list table{
+    
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse:separate;/*this is how to add space between columns in a table*/
+    border-spacing: 50px 0;/*this is how to add space between columns in a table*/
+    color:#000000d5;
+    position:relative;/*relative position makes margin auto to work */
+}
+.page-list h4{
+    position: relative;
+    padding-top:15px;
+    margin-top:0px;
+    width:100%;
+    height:3em;
+    background: #000000d5;
+    margin-right: auto;
+    margin-left: auto;
+    color:#958758;
+    border-radius:15px;
+    text-align:center;
+}
+table button{
+    border-radius: 4px ;
+    background-color: #cccccc;
+}
+table button:hover{
+    border-radius: 4px ;
+    border:#cccccc;
+    background-color: #969494;
+}
+td{
+    padding:5px 0;/*adding space between rows in a table*/
+}

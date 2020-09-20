@@ -1,0 +1,153 @@
+body{
+    background-color:#7c858427;
+    font-family: Arial;
+}
+
+
+@media only screen and (min-width:700px){/**/
+
+    .container{
+        margin-top:-40px ;
+        position: relative;
+        width:80%;
+    }
+
+    nav ul{
+    position:fixed;
+    background:black;
+    display:flex;
+    width:100%;
+    height:3em;
+    top: 0px;
+    z-index:999;
+    text-align:center;
+    }
+
+    nav ul li{
+        position:relative;
+        display:inline-flex;
+        align-items: center;
+        padding-left:1%;
+        width:12.5%;
+    
+    border:#785739 solid ;
+    
+    }
+    
+    
+    
+    nav ul li a{
+        font-weight:900;
+        color:#ffffff;
+        float:left;
+    }
+    nav ul li a:hover {
+        position: relative;
+        color:grey;
+        font-weight:1000;
+        font-size:15px;
+
+    }
+    input{
+        display:none;
+
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    label{
+        position: fixed;
+        padding-left: 20px;
+        width:100%;
+        top:0px;
+        background-color:#000000;
+        height:3em;
+        display:flex;
+        align-items: center;
+        z-index:5000;
+
+    }
+    nav {
+        display:none;
+        
+    }
+
+
+#nav-toggle:checked ~ nav {
+        display:block;
+        background:#000000;
+        width:20%;
+        border-radius: 10px;
+        margin-top:-30px;
+
+        position:fixed;/*makes the properties to be within the defined size and not the whole page*/
+    }
+    nav ul{
+        position:relative;
+        margin-top:1.5em;
+
+
+    }
+
+    nav ul li {
+        position: relative;
+        color:#768753;
+        padding:10px 0px 10px 10%;
+        border:#785739 solid;
+        
+    }
+    nav ul li a:hover {
+        position: relative;
+        color:grey;
+        font-weight:1000;
+        font-size:15px;
+
+    }
+    input{
+        display:none;
+    }
+
+    header {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        background: crimson;
+        margin-top:0px;
+        display:flex;
+        height:3em;
+        align-items:center;
+        z-index:999;
+    
+
+    }
+    .lab span,.lab span::before,.lab span::after{
+        position: relative;
+        border:solid  #785739;
+        width:25px;
+        height:5px;
+        padding-left: 4px;
+        border-radius:3px;
+    }
+    .lab span::before,.lab span::after{
+        position:absolute;
+        content:'';
+        margin-top:5px;
+        margin-left: -7.5px;
+        width:25px;
+    }
+    lab span::after,.lab span::before{
+        top:4px;
+        position:absolute;
+        margin-top:-15px;
+        margin-left: -7.5px;
+        width:25px;
+    }
+  
+.container{
+    position: relative;
+    margin-top:50px;
+    width:80%;
+}
+}
